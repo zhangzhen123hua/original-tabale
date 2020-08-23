@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      width: 42px;
+      border: none;
+      outline: none;
+      /*去掉轮廓线 */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    table属性：
+    border:默认值为0（无边框）。最小值为1.
+    cellspacing:默认值为2（单元格与单元格之间的距离），当单元格与单元格无距离设置值为0.
+    cellpadding:设置单元格中的文字距离边框的距离。
+    align:整个表格的对齐方式。（默认：left/right/center）
+    当设置width和height后每个单元格的宽高自动平均分配。
+   -->
+  <!-- 
+      <caption></caption> 表格标题，位于第一行（tr）的上面。
+    -->
+  <!-- 
+      tr属性：
+      align:一行中的内容对齐方式。
+      tr标签：只能嵌套td/th。
+    -->
+  <!-- 
+      td属性：
+      align：一列中的内容对齐方式。
+      td标签：可以嵌套任何的标签。
+      合并单元格：
+      作用于第一个td上，将其余的td删除或注释掉即可。
+      colspan：跨列合并（水平方向）
+      rowspan：跨行合并（垂直方向）
+     -->
+  <!-- 
+       th替代td用于设置表头，内容会加粗和居中，通常用于第一行。
+       意义：利于搜索引擎。（语义化）
+      -->
+  <!-- 
+        语义化：
+        <thead></thead>表格的表头（包裹第一行）
+        <tbody></tbody>表格的主体
+       -->
+  <!-- <table border="1" cellspacing="0" cellpadding="20">
+    <caption>表格标题</caption>
+    <tr>
+      <th>姓名</th>
+      <td><input type="text"></td>
+      <td>年龄</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>身高</td>
+      <td><input type="text"></td>
+      <td>体重</td>
+      <td><input type="text"></td>
+    </tr>
+  </table> -->
+  <table border="1" cellspacing="0" width="500px" height="500px">
+    <tr>
+      <td colspan="3"></td>
+      <!-- <td></td>
+      <td></td> -->
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <!-- <td></td> -->
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <!-- <td></td> -->
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+
+</html>
